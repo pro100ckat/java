@@ -1,0 +1,23 @@
+/**
+ * Created by Евгений on 26.04.2017.
+ */
+import java.io.*;
+
+public class Zadacha3 {
+
+    public static void main(String[] argv) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int[] Cats = {Integer.parseInt(reader.readLine()), Integer.parseInt(reader.readLine()), Integer.parseInt(reader.readLine()),
+                Integer.parseInt(reader.readLine()),Integer.parseInt(reader.readLine()),Integer.parseInt(reader.readLine())};
+
+        for(int i = 0; i < 6; i++)
+        {
+            if((Cats[i] / 100 != 0) && (Cats[i] / 100 < 10) && (Cats[i] > 0) && ((Cats[i] % 10) * (Cats[i] / 100) == ((Cats[i] / 10) % 10) * (Cats[i] / 10) % 10))
+            {
+                System.out.println(Cats[i]);
+            }
+        }
+
+    }
+
+}

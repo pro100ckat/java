@@ -1,0 +1,32 @@
+/**
+ * Created by Евгений on 26.04.2017.
+ */
+import java.io.*;
+
+public class Zadacha_1 {
+
+
+    public static void main(String[] argv) throws Exception{
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        String s1 = reader.readLine();
+        String s2 = reader.readLine();
+        String s3 = reader.readLine();
+        String s4 = reader.readLine();
+        String s5 = reader.readLine();
+
+        if(s4.equals(s5))
+        {
+            s1 += s2;
+            System.out.println(s1);
+        }
+        else
+        {
+            s1 += s3;
+            System.out.println(s1);
+        }
+
+
+    }
+
+}

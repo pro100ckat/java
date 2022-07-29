@@ -1,0 +1,15 @@
+package javaapplication1;
+import java.util.Scanner;
+public class JavaApplication1 {
+  public static void main(String[] args) {
+       System.out.println("Programa dla vishislenia Vesokosnogo goda");
+       System.out.print("Vvedite god : ");
+       int a;
+       Scanner ai = new Scanner(System.in);
+       a = ai.nextInt();
+       if ((a % 4 == 0) && (a % 100 != 0) || (a % 400 == 0))
+       {System.out.println(a + " vesokosnii god.");} 
+       else
+        System.out.println(a + " ne vesokosnii god.");
+    }   
+}
